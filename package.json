@@ -1,0 +1,43 @@
+{
+  "name": "L3.js",
+  "version": "1.0.0",
+  "description": "Library based on D3.js",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "cross-env NODE_ENV=development webpack -w",
+    "lint": "tslint -c tslint.json 'src/**/*.ts' --fix",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanni4night/L3.js.git"
+  },
+  "keywords": [
+    "L3"
+  ],
+  "author": {
+    "name": "Yanni Nightingale",
+    "url": "https://yanni4night.github.io/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yanni4night/L3.js/issues"
+  },
+  "homepage": "https://github.com/yanni4night/L3.js#readme",
+  "devDependencies": {
+    "cross-env": "^5.1.4",
+    "ts-loader": "^4.2.0",
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.1",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.14"
+  },
+  "dependencies": {
+    "@types/d3": "^5.0.0",
+    "@types/lodash": "^4.14.107",
+    "d3": "^5.0.0",
+    "lodash": "^4.17.5"
+  }
+}
